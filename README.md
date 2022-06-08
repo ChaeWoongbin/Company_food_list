@@ -8,7 +8,7 @@
  신청apge - 등록자(로그인 id)
 
 라우터 분할
-https://velog.io/@dongchyeon/Node.js-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0
+https://velog.io/@dongchyeon/Node.js-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0   
 
    
 # Page
@@ -20,7 +20,7 @@ https://velog.io/@dongchyeon/Node.js-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EB%B6%84%EB%A6
 
 ![image](https://user-images.githubusercontent.com/70190887/172511246-341609bc-c1f5-4d79-90fd-ec6bfccd8188.png)
 
-![image](https://user-images.githubusercontent.com/70190887/172511257-9860ce50-e774-43e3-9432-e70b47e3e26f.png)
+![image](https://user-images.githubusercontent.com/70190887/172511257-9860ce50-e774-43e3-9432-e70b47e3e26f.png)   
 
    
 
