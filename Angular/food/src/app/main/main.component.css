@@ -1,0 +1,42 @@
+a{
+    color : white;
+    text-decoration: none;
+}
+.main{
+    background-color: #ffffff;
+}
+.test{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item{
+    max-width: 50%;
+    color:white;
+    text-align: center;
+
+}
+
+.item img{
+    width:70%;
+    height:auto;
+    margin: 10%;
+}
+
+.item h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgb(112, 80, 12);
+}
+
+.main-icon{
+    min-height: 600px;
+    align-items: center;
+}
+
+.modal-body b{
+   color: brown;
+}

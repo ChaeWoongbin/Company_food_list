@@ -1,0 +1,38 @@
+
+<section class="main">
+  <div class="container-lg"> 
+    <div class="main-icon row p-y-3">
+      <div class="item col-md-4">
+        <a href="#/insert_food"><img src="../../assets/food.png" title="" ></a>
+        <a href="#/insert_food"><h4 class="text-xs-center" > 식수 등록 </h4></a>
+      </div>
+
+      <div class="item col-md-4">
+        <a href="#/insert_salad"><img src="../../assets/salad.png" title="" ></a>
+        <a href="#/insert_salad"><h4 class="text-xs-center"> 샐러드 등록 </h4></a>
+      </div>
+    
+      <div class="item col-md-4">
+        <a href="#/search"><img src="../../assets/list.png" title="" ></a>
+        <a href="#/search"><h4 class="text-xs-center"> 식수 현황 </h4></a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <ng-template #modal_id let-modal>
+    <div class="modal-header">
+      <h3 class="modal-title" id="myModalLabel" style="text-align:center;">공지사항</h3>
+    </div>
+    <div class="modal-body" >
+    1. 저녁식사는 규정에 의거 <u><b>20시까지 근무</b>를 전제로하는 직원에게 무료로 제공</u><br><br>
+      2. <u>식수파악 직원 연차나 출장 시 부서 직원에게 사이트, 내용 공유 필수</u><br><br>
+    3. 샐러드는 <u><b>매주 목요일 2시까지</b></u> 등록 가능 <br><br>
+    4. 중식은 <u><b>오전 10시까지</b></u>, 석식은 <u><b>오후 2시 30분까지</b></u> 등록 가능 <br>&nbsp;&nbsp;&nbsp;(이후 식수등록 차단으로 경영지원팀으로 직접 문의 바람)
+
+    </div>
+    <div class="modal-footer" style="text-align:center;">
+      <button type="button" class="btn btn-default" data-dismiss="modal" (click)="modal.close()" >확인</button>
+    </div>
+  </ng-template>

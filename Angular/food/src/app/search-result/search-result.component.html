@@ -1,0 +1,87 @@
+<section class="search-result">
+  
+  <br><h3 class="text-xs-center" style="margin-bottom:.5em;"><u><small>식 수 현 황 </small></u></h3><br>
+  <div class="dashboard">
+  <td>
+  
+      <table class="table table-hover m-auto ">
+          <thead>
+              <tr>
+                <!-- <th scope="col">part_skey</th> -->
+                <th scope="col">일자</th>
+                <th scope="col">부서</th>
+                <th scope="col">사업장</th>
+                <th scope="col">인원</th>
+                <th scope="col">등록자</th>
+                <th scope="col">비고</th>
+              </tr>
+            </thead>
+            <tbody>
+                  <tr *ngFor="let result of result$ | async | slice:0; let i = index">
+                    <th scope="row" >{{result.date}}</th>
+                    <td>{{result.cpart}}</td>
+                    <!-- include 조건 변경 필요 -->
+                <p *ngIf = "result.place == 'A         '; then thenA;"> </p>
+                <p *ngIf = "result.place == 'B         '; then thenB;"> </p>
+                  <ng-template #thenA><td> 서구</td></ng-template>
+                  <ng-template #thenB><td> 동구</td></ng-template>
+                    <td>{{result.count}}</td>
+                    <td>{{result.user_skey}}</td>
+                    <td> {{result.temp}}</td>
+                  </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                  <td>합계</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>{{total_food}}</td>
+                  <td></td>
+                </tr>          
+            </tfoot>
+        </table>
+  </td>
+  <td class="col-lg-3 m-auto "> </td>
+        
+  <td>
+    <table class="table table-hover m-auto ">
+      <thead>
+          <tr>
+            <!-- <th scope="col">part_skey</th> -->
+            <th scope="col">일자</th>
+            <th scope="col">부서</th>
+            <th scope="col">사업장</th>
+            <th scope="col">인원</th>
+            <th scope="col">등록자</th>
+            <th scope="col">비고</th>
+          </tr>
+        </thead>
+        <tbody>
+              <tr *ngFor="let result of result_salad$ | async | slice:0; let i = index">
+                <th scope="row" >{{result.date}}</th>
+                <td>{{result.cpart}}</td>
+                <p *ngIf = "result.place == 'A         '; then thenA;"> </p>
+                <p *ngIf = "result.place == 'B         '; then thenB;"> </p>
+                  <ng-template #thenA><td> 서구</td></ng-template>
+                  <ng-template #thenB><td> 동구</td></ng-template>
+               
+                <td>{{result.count}}</td>
+                <td>{{result.user_skey}}</td>
+                <td>{{result.temp}}</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <td>합계</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>{{total_salad}}</td>
+              <td></td>
+            </tr>          
+        </tfoot>
+    </table>
+  </td>
+</div>
+  </section>

@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Salad](
+	[Date] [nchar](20) NULL,
+	[cpart] [nchar](30) NULL,
+	[user_skey] [nchar](10) NULL,
+	[seq] [nchar](10) NULL,
+	[count] [nchar](10) NULL,
+	[place] [nchar](10) NULL,
+	[temp] [nvarchar](100) NULL
+) ON [PRIMARY]

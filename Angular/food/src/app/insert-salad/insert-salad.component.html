@@ -1,0 +1,75 @@
+
+<div class="container" style="overflow-x: auto;">
+    <br><h3 class="text-xs-center" style="margin-bottom:.5em;"><u><small>샐 러 드 등 록</small></u></h3><br>
+    <form method = "post" action="ins_db_2022.php" >
+    <table class="table table-striped table-hover table-bordered">
+    <tbody>
+        <tr>
+            <th>신청일자</th>
+            <th>
+               <!--샐러드는 목요일에만 다음주 점심식사 신청가능-->
+                <form class="row row-cols-sm-auto">
+                    <div class="col-12">
+                      <div class="input-group">
+                        <input class="form-control" 
+                               name="dp" ngbDatepicker #d="ngbDatepicker" placeholder="{{NowDate.substring(0,10)}}" (click)="d.toggle()" disabled>
+                      </div>
+                    </div>
+                  </form>
+            </th></tr>
+            <tr>
+            <th >시간</th>
+            <th > <input type="text" autocomplete="off" class="form-control"  value="{{NowDate}}"></th>
+            </tr>
+            
+            <tr>
+            <th >신청 대상 일자</th>
+            <th ><span>{{startDate}}</span> ~ <span>{{endDate}}</span> </th>
+            </tr>
+
+        <tr>
+            <th>부서</th>
+            <th>
+                <select name='dept_name' [(ngModel)]="input_cpart">
+                <option value='' selected>-- 선택 --</option>
+                <option  *ngFor="let cpartList of cpartList$ | async | slice:0; let i = index">{{cpartList.n_name}}</option>
+                 </select>
+            </th></tr>
+            <tr><th>식수 인원</th>
+            <th>
+                <select name='count' [(ngModel)]="input_count">
+                    <option value='' selected>-- 선택 --</option>
+                    <option *ngFor="let mem of members | slice:1; let i = index;">{{i}}</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>구분</th>
+            <th>
+                <select name='meal' [(ngModel)]="input_seq">
+                    <option value='' selected>-- 선택 --</option>
+                    <option value='L'>점심</option>
+                </select>
+            </th></tr>
+            <tr><th>식당</th>
+            <th>
+                <select name='location' [(ngModel)]="input_place">
+                    <option value='' selected>-- 선택 --</option>
+                    <option value='B'>동구</option>
+                    <option value='A'>서구</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>등록자</th>
+            <th>{{id}}
+            </th></tr>
+            
+            <tr><th>비고</th>
+            <th><small><input type="text" autocomplete="off" class="form-control" name="bigo" [(ngModel)]="input_temp" placeholder="신청자 기입바랍니다."></small></th>
+        </tr>
+    </tbody>
+</table>
+        <div align="center" class="d-grid gap-2 col-3 mx-auto"><input type="submit" class="btn btn-outline-primary" value="등록" (click)="click_search(input_cpart, input_count, input_seq, input_place, input_temp)" /></div>
+</form><br>
+</div>

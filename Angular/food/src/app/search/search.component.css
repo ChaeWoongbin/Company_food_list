@@ -1,0 +1,17 @@
+.search{
+    background-color: #f1f3f7;
+    padding: 180px 100px;
+    height: 650px;
+}
+
+.login{
+    background-color: #ffffff;
+    padding: 20px 30px;
+}
+
+@media screen and (max-width:700px){
+
+    .joinnow{
+        padding: 140px 50px;
+    }
+}

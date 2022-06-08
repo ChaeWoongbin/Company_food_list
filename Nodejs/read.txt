@@ -1,0 +1,14 @@
+
+Nodejs - backend
+
+index.js
+ - 기본 js
+ - mssql 연결 확인
+ - 입력부서 검색 ( DB 부서정보 )
+ - food.js 연결
+ + 로그인 추가 필요
+
+    ▷ food.js
+      - 식수 등록 ( db종류 : 식수/샐러드 )
+      - 식수 현황 ( db종류 : 식수/샐러드 )
+

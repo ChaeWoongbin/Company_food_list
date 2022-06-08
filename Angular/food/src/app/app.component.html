@@ -1,0 +1,87 @@
+
+<app-header></app-header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto order-0 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="main">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink = "insert_food">식수등록</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="insert_salad">샐러드 등록</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="search">식수 현황</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="app-wrapper">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-6">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns here to organize your footer content.</p>
+        <p>Here you can use rows and columns here to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="http://naver.com/">링크1</a>
+            </li>
+            <li>
+              <a href="http://google.com/">링크2</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Test Page:
+    <span> Information Technology Team </span>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

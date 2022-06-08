@@ -1,12 +1,11 @@
-# Company_food_list
-회사 식수 등록 페이지 
+# company_Food
 
 
-기간 : 2022.04 초 ~ 2022.05 중순
+ Main, 식수등록, 샐러드등록, 식수현황
 
-기능
- - 점심 / 저녁
- - 샐러드 신청
- - 신청 리스트 
+ 일자(신청일자), 부서(cPart), 사업장(위치), 인원, 등록자(사원계정), 비고
 
+ 신청apge - 등록자(로그인 id)
 
+라우터 분할
+https://velog.io/@dongchyeon/Node.js-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0

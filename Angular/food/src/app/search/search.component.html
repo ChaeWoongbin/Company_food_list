@@ -1,0 +1,35 @@
+
+
+    
+<section class="search">
+
+
+    <div class="login col-lg-4 m-auto shadow-lg">
+      <form>
+        <form class="row row-cols-sm-auto">
+          <div class="col-12">
+            <div class="input-group">
+              <input class="form-control" placeholder="클릭시 날짜 선택이 표시됩니다" [firstDayOfWeek]="7"
+                     name="dp" [(ngModel)]="input_date" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+            </div>
+          </div>
+        </form><br>
+          <div class="col-lg-13">
+            <select class="form-select" name='place' [(ngModel)]="place">
+              <option value='' selected>-- 사업장 --</option>
+              <option value='B'>동구</option>
+              <option value='A'>서구</option>
+            </select>
+          </div><br>   
+          <div class="col-lg-13">
+            <select class="form-select" name='seq' [(ngModel)]="seq">
+              <option value='' selected>-- 선택 --</option>
+              <option value='L'>점심</option>
+              <option value='D'>저녁</option>
+          </select>
+          </div><br>
+          <button type="submit" class="btn btn-primary col-lg-12" (click)='btn_search(input_date, place, seq)'>Search</button>
+        </form>
+   </div>
+
+</section>
