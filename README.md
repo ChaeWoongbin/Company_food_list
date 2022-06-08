@@ -23,7 +23,8 @@ https://velog.io/@dongchyeon/Node.js-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EB%B6%84%EB%A6
 ![image](https://user-images.githubusercontent.com/70190887/172511257-9860ce50-e774-43e3-9432-e70b47e3e26f.png)   
 
    
-
+   
+   
 # temp
 환경
 mssql ( 식수관리 서버 )
@@ -49,5 +50,11 @@ admin / 1234
 
 
 ++ 
-DB종류 수정 ( SQLite or mariaDB )
+DB종류 수정 ( SQLite or mariaDB )   
+   
 
+
+
+# test
+https://youtu.be/SM16xkVKqYk
+.   
