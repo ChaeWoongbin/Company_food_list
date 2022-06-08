@@ -9,3 +9,31 @@
 
 라우터 분할
 https://velog.io/@dongchyeon/Node.js-%EB%9D%BC%EC%9A%B0%ED%84%B0-%EB%B6%84%EB%A6%AC%ED%95%98%EA%B8%B0
+
+
+
+환경
+mssql ( 식수관리 서버 )
+mssql ( 계정 확인 , 회사 기존 서버 )
+
+
+테스트
+db생성
+mssql - db food,salad -> c_food, c_salad, part
+c_food - 식수명단
+c_salad- 샐러드명단
+cpart - 부서리스트
+
+
+nodejs db 설정 입력
+var config
+
+하드코딩 계정
+admin / 1234
+
+
+
+
+
+++ 
+DB종류 수정 ( SQLite or mariaDB )
