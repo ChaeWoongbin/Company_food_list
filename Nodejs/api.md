@@ -1,0 +1,13 @@
+index.js
+/api/get/mssql - 연결테스트
+/api/get/depart - 부서리스트 검색
+
+login.js
+/api/login/get/test - test페이지
+/api/login/post/login_check - 계정확인 (user_id, user_password)
+
+
+food.js
+/api/food/get/test - test페이지
+/api/food/post/insert_food - 식수,샐러드신청 ( date, cpart, user_skey, seq, count, place, temp, db )
+/api/food/post/search - 식수,샐러드 신청현황 검색 ( date, seq, place, db )
