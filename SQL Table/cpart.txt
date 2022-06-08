@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[cPart](
+	[c_code] [varchar](20) NOT NULL,
+	[n_name] [varchar](30) NULL,
+	[n_name1st] [varchar](30) NULL,
+	[n_name2nd] [varchar](30) NULL,
+	[n_name3th] [varchar](30) NULL,
+	[n_place] [varchar](2) NULL
+) ON [PRIMARY]

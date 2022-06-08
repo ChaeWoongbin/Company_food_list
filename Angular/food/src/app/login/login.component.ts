@@ -30,11 +30,11 @@ export class LoginComponent implements OnInit {
   login(){
     this.loginCheck(this.id,this.password);
 
-    // if(this.id == 'admin' && this.password == '1234'){ // 하드코딩
-    //   this.session.setInfo(this.id); // 세션에 아이디 정보를 넣어줌(예제니까 간단하게)
-    //   this.rout.navigateByUrl('main'); // 로그인 성공시 이동할 페이지
-    //   return;
-    // }
+    if(this.id == 'admin' && this.password == '1234'){ // 하드코딩
+      this.session.setInfo(this.id); // 세션에 아이디 정보를 넣어줌(예제니까 간단하게)
+      this.rout.navigateByUrl('main'); // 로그인 성공시 이동할 페이지
+      return;
+    }
 
     // else if(this.id == '3213' && this.password == '1234'){ // 하드코딩
     //   this.session.setInfo(this.id); // 세션에 아이디 정보를 넣어줌(예제니까 간단하게)
