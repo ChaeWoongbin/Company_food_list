@@ -6,5 +6,5 @@ CREATE TABLE [dbo].[Food](
 	[seq] [nchar](10) NULL,
 	[count] [nchar](10) NULL,
 	[place] [nchar](10) NULL,
-	[temp] [nchar](10) NULL
+	[temp] [nchar](100) NULL
 ) ON [PRIMARY]
